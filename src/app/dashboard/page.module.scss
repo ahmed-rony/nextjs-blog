@@ -76,6 +76,7 @@
       font-weight: 500;
     }
     input,
+    select,
     textarea {
       border: 1px solid #aaaaaa;
       background: transparent;
@@ -89,10 +90,13 @@
       -ms-border-radius: 3px;
       -o-border-radius: 3px;
     }
+    select {
+      background: #222;
+    }
     textarea {
       min-height: 200px;
     }
-    button{
+    button {
       margin-top: 10px;
       width: 40%;
       margin-left: auto;

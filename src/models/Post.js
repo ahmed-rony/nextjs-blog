@@ -15,6 +15,10 @@ const postSchema = mongoose.models.Post || mongoose.model('Post', new Schema({
         type: String,
         required: true
     },
+    category: {
+        type: String,
+        required: true
+    },
     username: {
         type: String,
         required: true

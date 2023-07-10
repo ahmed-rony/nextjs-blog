@@ -22,6 +22,7 @@ const Blog = async () => {
                     </div>
                     <div className={styles.content}>
                         <h3>{item?.title}</h3>
+                        <small>{item?.category}</small>
                         <p>{item?.desc}</p>
                     </div>
                 </Link>

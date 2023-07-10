@@ -29,7 +29,8 @@ const Dashboard = () => {
         e.preventDefault();
         const title = e.target[0].value;
         const img = e.target[1].value;
-        const desc = e.target[2].value;
+        const category = e.target[2].value;
+        const desc = e.target[3].value;
 
         try {
             await fetch("/api/posts", {
@@ -37,6 +38,7 @@ const Dashboard = () => {
                 body: JSON.stringify({
                     title,
                     img,
+                    category,
                     desc,
                     username: session?.data?.user?.name
                 })
@@ -84,6 +86,12 @@ const Dashboard = () => {
                     <h2>Add New Post</h2>
                     <input type="text" placeholder='Title' required />
                     <input type="text" placeholder='Image link(only from pexel.com)' required />
+                    <select required>
+                        <option disabled >Select</option>
+                        <option value="illustration">illustrations</option>
+                        <option value="animation">animations</option>
+                        <option value="website">websites</option>
+                    </select>
                     <textarea placeholder='Description' required></textarea>
                     <button type='submit'>Submit</button>
                 </form>
