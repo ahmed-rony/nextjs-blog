@@ -83,7 +83,7 @@ const Dashboard = () => {
                 <form className={styles.add_post} onSubmit={handleSubmit}>
                     <h2>Add New Post</h2>
                     <input type="text" placeholder='Title' required />
-                    <input type="text" placeholder='Image link' required />
+                    <input type="text" placeholder='Image link(only from pexel.com)' required />
                     <textarea placeholder='Description' required></textarea>
                     <button type='submit'>Submit</button>
                 </form>
