@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0 100px;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+  }
+
+  .content {
+    display: flex;
+    gap: 60px;
+
+    .left {
+      flex: 1;
+      height: 400px;
+      position: relative;
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input,
+      textarea {
+        border: 1px solid #aaaaaa;
+        background: transparent;
+        outline: none;
+        font-size: 18px;
+        color: #ddd;
+        padding: 20px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+      }
+      textarea {
+        min-height: 200px;
+      }
+      button {
+        width: 40%;
+      }
+    }
+  }
+}

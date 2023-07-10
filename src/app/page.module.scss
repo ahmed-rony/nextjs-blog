@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    align-items: center;
+
+    .banner_text{
+        flex: 1.5;
+
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background:linear-gradient(to bottom, #2675a3, #ddd);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p{
+            padding-right: 100px;
+            margin-bottom: 30px;
+        }
+    }
+    .banner_img{
+        flex: 1;
+        height: 350px;
+        position: relative;
+    }
+}

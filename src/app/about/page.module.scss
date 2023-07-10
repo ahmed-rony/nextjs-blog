@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px;
+
+    .about_img{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        h3{
+            font-size: 26px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: #1c7f83;
+            color: #fff;
+            padding: 20px;
+            
+        }
+    }
+    .about_desc{
+        display: flex;
+        gap: 60px;
+        
+        .about_left,.about_right{
+            flex: 1;
+            h3{
+                font-size: 20px;
+                font-weight: 600;
+                padding-bottom: 20px;
+            }
+            p{
+                padding-bottom: 10px;
+                text-align: justify;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-left: 20px;
+            }
+        }
+    }
+}

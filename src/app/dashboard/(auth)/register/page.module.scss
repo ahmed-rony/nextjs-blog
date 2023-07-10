@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+  a{
+    text-decoration: underline;
+  }
+  
+  form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input {
+      font-size: 18px;
+      color: #ddd;
+      border: 1px solid #aaaaaa;
+      background: transparent;
+      outline: none;
+      padding: 20px;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+    button{
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 0;
+
+    .item{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .content_img{
+            flex: 1;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+}
+        .content{
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-right: 40px;
+            h3{
+                font-size: 26px;
+                font-weight: 500;
+            }
+            p{
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
+    }
+}
